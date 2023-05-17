@@ -192,7 +192,6 @@ h1{
 .historia{
     background-image: url(../img/logoafa.jpg);
     width: 100%;
-    height: 1300px;
     background-attachment: fixed;    
 }
 
@@ -201,7 +200,6 @@ h1{
 .copa{
     background-image: url(../img/copaamericafondo.jpg);
     width: 100%;
-    height: 800px;
     background-size: cover;
     background-position: center;
 }
@@ -211,7 +209,6 @@ h1{
 .finalissima{
     background-image: url(../img/finalissimafondo.jpg);
     width: 100%;
-    height: 800px;
     background-size: cover;
     background-position: top;
 }
