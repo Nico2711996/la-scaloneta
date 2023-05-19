@@ -168,10 +168,6 @@ h1{
 -moz-box-shadow: 10px 10px 19px 0px rgba(0,0,0,0.7);
 }
 
-.formacion{
-    grid-column: span 4;  
-}
-
 .titulares{
     position: relative;
 }
@@ -428,6 +424,19 @@ h1{
     font-size: 25px;
 }
 
+.video{
+    display: flex;
+    align-items: center;
+    background-color: #d7dae6cc;
+    border: 2px black solid;
+    margin: 10px;
+}
+
+.video h3{
+    font-size: 25px;
+    margin: 10px;
+}
+
 /*--------FOOTER--------*/
 
 footer{
@@ -448,20 +457,6 @@ footer{
     margin: 25px;
     color: white;
 }
-
-.video{
-    display: flex;
-    align-items: center;
-    background-color: #d7dae6cc;
-    border: 2px black solid;
-    margin: 10px;
-}
-
-.video h3{
-    font-size: 25px;
-    margin: 10px;
-}
-
 
 /*--------MEDIA-QUERIS--------*/
 
