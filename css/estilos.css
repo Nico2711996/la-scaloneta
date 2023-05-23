@@ -4,24 +4,50 @@
   text-decoration: none;
   list-style: none; }
 
+@keyframes slide {
+  from {
+    margin-left: 100%;
+    width: 80%; }
+  to {
+    margin-left: 0;
+    width: 80%; } }
+
+/*-----EXTENDS-----*/
 header {
   background-color: #132B82; }
   header nav div a {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    header nav div a img {
+      width: 70px;
+      transition: 2s; }
+      header nav div a img:hover {
+        transform: scale(1.5); }
     header nav div a h1 {
       color: white; }
-  header nav div div ul li {
-    color: white; }
-    header nav div div ul li .nav-link {
-      color: white !important;
-      border: white solid 2px;
-      border-radius: 5px;
-      margin: 0px 15px 0px 15px; }
-      header nav div div ul li .nav-link:hover {
-        background-color: white;
-        color: black !important; }
+  header nav div div ul {
+    background-color: #132B82; }
+    header nav div div ul li {
+      color: white; }
+      header nav div div ul li .nav-link {
+        color: white !important;
+        border: white solid 2px;
+        border-radius: 5px;
+        margin: 0px 15px 0px 15px; }
+        header nav div div ul li .nav-link:hover {
+          background-color: white;
+          color: black !important; }
+      header nav div div ul li .dropdown-menu {
+        background-color: #132B82; }
+        header nav div div ul li .dropdown-menu li .dropdown-item {
+          background-color: #132B82;
+          color: white;
+          padding: 0px;
+          margin: 0px; }
+          header nav div div ul li .dropdown-menu li .dropdown-item:hover {
+            background-color: white;
+            color: black; }
   header nav div div form .btn-outline-success {
     color: white;
     border-color: white; }
@@ -39,7 +65,7 @@ main .hero {
     font-size: 50px;
     font-style: italic;
     font-weight: 600;
-    padding-top: 150px; }
+    padding-top: 100px; }
   main .hero .intro {
     display: flex;
     background-color: rgba(255, 254, 254, 0.363);
@@ -58,20 +84,23 @@ main .hero {
       font-family: 'Times New Roman', Times, serif;
       font-style: italic; }
 
-main .contenedor {
+.contenedor {
   display: flex;
   justify-content: space-between; }
-  main .contenedor .tarjetas {
+  .contenedor .tarjetas {
     display: flex;
     text-align: center;
     flex-direction: column;
     background-color: #d7dae6cc;
     border: 2px black solid;
     margin: 150px 25px 150px 25px;
-    padding: 25px; }
-    main .contenedor .tarjetas img {
+    padding: 25px;
+    transition: 2s; }
+    .contenedor .tarjetas:hover {
+      transform: scale(1.1); }
+    .contenedor .tarjetas img {
       width: 100%; }
-    main .contenedor .tarjetas a {
+    .contenedor .tarjetas a {
       color: white;
       font-weight: 900;
       background-color: #132B82;
@@ -162,15 +191,25 @@ main .copa {
       background-color: #132b82;
       color: white;
       margin-top: 25px;
-      width: 80%; }
+      width: 80%;
+      animation-name: slide;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out; }
     main .copa .copaAmerica p {
       margin-top: 25px;
       font-size: 25px;
       font-weight: 700;
-      height: 400px;
       background-color: #132b82e8;
       color: white;
       padding: 10px; }
+    main .copa .copaAmerica img {
+      width: 50%;
+      height: 400px;
+      transition-property: width, height;
+      transition-duration: 3s; }
+      main .copa .copaAmerica img:hover {
+        width: 100%;
+        height: 400px; }
 
 .barra {
   font-size: 45px;
@@ -216,7 +255,10 @@ main .finalissima {
       font-size: 45px;
       background-color: #132B82;
       color: white;
-      width: 80%; }
+      width: 80%;
+      animation-name: slide;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out; }
     main .finalissima .argItalia p {
       font-size: 25px;
       font-weight: 600; }
@@ -252,10 +294,21 @@ main .qatar {
       color: black;
       font-size: 45px;
       width: 80%;
-      margin-top: 25px; }
+      margin-top: 25px;
+      animation-name: slide;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out; }
     main .qatar .qatarInfo p {
       color: white;
       font-size: 20px; }
+    main .qatar .qatarInfo .logoMundial {
+      width: 50%;
+      height: 400px;
+      transition-property: width, height;
+      transition-duration: 3s; }
+      main .qatar .qatarInfo .logoMundial:hover {
+        width: 70%;
+        height: 400px; }
     main .qatar .qatarInfo h3 {
       background-color: white;
       width: 60%;
@@ -301,6 +354,14 @@ footer {
   padding: 25px;
   justify-content: space-between;
   align-items: center; }
+  footer div a img {
+    width: 80px;
+    height: 80px;
+    transition-property: width, height;
+    transition-duration: 2s; }
+    footer div a img:hover {
+      width: 100px;
+      height: 100px; }
   footer div li a {
     display: block;
     background-color: #030853;
@@ -310,3 +371,211 @@ footer {
     font-size: 20px;
     margin: 25px;
     color: white; }
+
+/*--------INICIO--------*/
+@media screen and (max-width: 1480px) {
+  header {
+    flex-direction: column; }
+  main .hero h2 {
+    justify-content: center; }
+  main .hero .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero .intro p {
+      width: 100%;
+      text-align: center; }
+  main .hero .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media screen and (max-width: 1000px) {
+  main .hero h2 {
+    text-align: center; } }
+
+@media screen and (max-width: 550px) {
+  main .hero h2 {
+    text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  main .hero .intro img {
+    width: 100%; }
+  main .hero .intro p {
+    font-size: 20px;
+    text-align: center; }
+  main .hero .contenedor .tarjetas img {
+    width: 100%; } }
+
+/*--------LASELECCION--------*/
+@media screen and (max-width: 1480px) {
+  main .seleccion {
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px; } }
+
+@media screen and (max-width: 1000px) {
+  main .seleccion {
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px; } }
+
+@media screen and (max-width: 550px) {
+  main .seleccion {
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 250px; } }
+
+/*---------HISTORIA--------*/
+@media screen and (max-width: 1480px) {
+  main .historia .historiaScaloni img {
+    width: 70%; } }
+
+@media screen and (max-width: 1000px) {
+  main .historia .historiaScaloni img {
+    width: 70%; } }
+
+@media screen and (max-width: 550px) {
+  main .historia .historiaScaloni img {
+    width: 70%; } }
+
+@media screen and (max-width: 500px) {
+  main .historia .historiaScaloni h2 {
+    width: auto; }
+  main .historia .historiaScaloni img {
+    width: 70%; } }
+
+/*--------COPAAMERICA--------*/
+@media screen and (max-width: 1480px) {
+  main .copa .copaAmerica img {
+    width: 50%;
+    height: 400px;
+    transition-property: width, height;
+    transition-duration: 3s; }
+    main .copa .copaAmerica img:hover {
+      width: 100%;
+      height: 400px; }
+  main .desarrolloAmerica img {
+    width: 50%;
+    height: 400px;
+    transition-property: width, height;
+    transition-duration: 3s; }
+    main .desarrolloAmerica img:hover {
+      width: 100%;
+      height: 400px; } }
+
+@media screen and (max-width: 1000px) {
+  main .copa .copaAmerica img {
+    width: 50%;
+    height: 400px;
+    transition-property: width, height;
+    transition-duration: 3s; }
+    main .copa .copaAmerica img:hover {
+      width: 100%;
+      height: 400px; }
+  main .desarrolloAmerica .partidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .desarrolloAmerica .partidos img {
+      width: 80%; } }
+
+@media screen and (max-width: 550px) {
+  main .copa .copaAmerica img {
+    width: 50%;
+    height: 400px;
+    transition-property: width, height;
+    transition-duration: 3s; }
+    main .copa .copaAmerica img:hover {
+      width: 100%;
+      height: 400px; } }
+
+/*--------FINALISSIMA--------*/
+@media screen and (max-width: 1000px) {
+  main .finalissima .argItalia h2 {
+    width: 90%; }
+  main .finalissima .argItalia img {
+    width: 100%; } }
+
+@media screen and (max-width: 550px) {
+  main .finalissima .argItalia h2 {
+    width: 100%; }
+  main .finalissima .argItalia img {
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  main .finalissima .argItalia h2 {
+    width: 100%; }
+  main .finalissima .argItalia img {
+    width: 100%; } }
+
+/*--------QATAR2022--------*/
+@media screen and (max-width: 1550px) {
+  main .qatar .qatarInfo .partidosQatar {
+    width: 100%; } }
+
+@media screen and (max-width: 1300px) {
+  main .qatar .qatarInfo .logoMundial {
+    width: 90%; }
+  main .qatar .qatarInfo .partidosQatar {
+    width: 50%;
+    justify-content: center; }
+    main .qatar .qatarInfo .partidosQatar img {
+      width: 65%;
+      justify-content: center; } }
+
+@media screen and (max-width: 1000px) {
+  main .qatar .qatarInfo .logoMundial {
+    width: 90%; }
+  main .qatar .qatarInfo .partidosQatar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .qatar .qatarInfo .partidosQatar img {
+      width: 85%;
+      justify-content: center; } }
+
+@media screen and (max-width: 500px) {
+  main .qatar .qatarInfo .logoMundial {
+    width: 90%; }
+  main .qatar .qatarInfo .partidosQatar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .qatar .qatarInfo .partidosQatar img {
+      width: 90%; } }
+
+/*--------CONTACTO--------*/
+@media screen and (max-width: 1000px) {
+  main .contacto .contenedor h2 {
+    width: auto; }
+  main .contacto .contenedor .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d7dae6cc;
+    border: 2px black solid;
+    margin: 10px; } }
+
+@media screen and (max-width: 650px) {
+  main .contacto .contenedor p {
+    text-align: center; }
+  main .contacto .contenedor .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d7dae6cc;
+    border: 2px black solid;
+    margin: 10px;
+    width: 80%; }
+    main .contacto .contenedor .video iframe {
+      width: 100%; } }

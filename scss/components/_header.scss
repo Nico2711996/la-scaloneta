@@ -7,7 +7,11 @@ header{
                 flex-direction: column;
                 align-items: center;
                 img{
-
+                    width: 70px;
+                    transition: 2s;
+                    &:hover{
+                        transform: scale(1.5);
+                    }
                 }
                 h1{
                     color: white;
@@ -23,6 +27,7 @@ header{
             }
             div{
                 ul{
+                    background-color: #132B82;
                     li{
                         color: white;
                         .nav-link{
@@ -36,9 +41,18 @@ header{
                             }
 
                         }
-                        ul{
+                        .dropdown-menu{
+                            background-color: #132B82;
                             li{
-                                a{
+                                .dropdown-item{
+                                    background-color: #132B82;
+                                    color: white;
+                                    padding: 0px;
+                                    margin: 0px;
+                                    &:hover{
+                                        background-color: white;
+                                        color: black;
+                                    }
 
                                 }
                             }

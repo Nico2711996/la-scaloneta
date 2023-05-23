@@ -9,7 +9,7 @@ main{
             font-size: 50px;
             font-style: italic;
             font-weight: 600;
-            padding-top: 150px;
+            padding-top: 100px;
         }
         .intro{
             display: flex;
@@ -30,9 +30,9 @@ main{
                 font-family: 'Times New Roman', Times, serif;
                 font-style: italic;
             }
-
         }
-        }
+    }
+}
         .contenedor{
             display: flex;
             justify-content: space-between;
@@ -44,6 +44,10 @@ main{
                 border: 2px black solid;
                 margin: 150px 25px 150px 25px;
                 padding: 25px;
+                transition: 2s;
+                &:hover{
+                    transform: scale(1.1);
+                }
                 img{
                     width: 100%;
                 }
@@ -58,9 +62,7 @@ main{
                     padding: 10px;
                 }
             }
-
         }
-}
 
 /*---------LASELECCION---------*/
 
@@ -82,7 +84,6 @@ main{
                         margin-top: 50px;
                     }
                 }
-
             }
         }
     }
@@ -132,9 +133,7 @@ main{
             padding: 20px;
             margin: 0px 30px 0px 30px;
             border: black 3px solid;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex (flex, column, center);    
             text-align: center;
             h2{
                 font-size: 45px;
@@ -181,17 +180,28 @@ main{
                     color: white;
                     margin-top: 25px;
                     width: 80%;
+                    animation-name: slide;
+                    animation-duration: 3s;
+                    animation-timing-function: ease-in-out;
+
                 }
                 p{
                     margin-top: 25px;
                     font-size: 25px;
                     font-weight: 700;
-                    height: 400px;
                     background-color: #132b82e8;
                     color: white;
                     padding: 10px;
                 }
                 img{
+                    width: 50%;
+                    height: 400px;
+                    transition-property: width, height;
+                    transition-duration: 3s;
+                    &:hover{
+                        width: 100%;
+                        height: 400px;
+                    }
                 
                 }
             }
@@ -253,6 +263,9 @@ main{
                     background-color: #132B82;
                     color: white;
                     width: 80%;
+                    animation-name: slide;
+                    animation-duration: 3s;
+                    animation-timing-function: ease-in-out;
                 }
                 p{
                     font-size: 25px;
@@ -298,13 +311,23 @@ main{
                     font-size: 45px;
                     width: 80%;
                     margin-top: 25px;
+                    animation-name: slide;
+                    animation-duration: 3s;
+                    animation-timing-function: ease-in-out;
                 }
                 p{
                     color: white;
                     font-size: 20px;
                 }
-                img{
-
+                .logoMundial{
+                    width: 50%;
+                    height: 400px;
+                    transition-property: width, height;
+                    transition-duration: 3s;
+                    &:hover{
+                        width: 70%;
+                        height: 400px;
+                    }
                 }
                 h3{
                     background-color: white;

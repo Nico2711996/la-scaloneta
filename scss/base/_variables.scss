@@ -1,0 +1,14 @@
+/*-----EXTENDS-----*/
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex($flex, $direction, $align,){
+    display: $flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+

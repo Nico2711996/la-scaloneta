@@ -459,6 +459,7 @@ footer{
 }
 
 /*--------MEDIA-QUERIS--------*/
+/*--------inicio--------*/
 
 @media screen and (max-width: 1480px) {
     header{
@@ -500,6 +501,8 @@ footer{
     }
 }
 
+/*--------laseleccion--------*/
+
 @media screen and (max-width:1480px) {
     .seleccion{
         width: 100%;
@@ -508,15 +511,16 @@ footer{
         grid-auto-rows: 300px;
         
     }
-    .formacion{
-        grid-column: span 3;
-    }
 }
+
+/*--------inicio--------*/
 
 @media screen and (max-width:1000px) {
     .hero h2{
         text-align: center;
     }
+
+    /*--------laseleccion--------*/
     .formacion{
         grid-column: span 2;
     }
@@ -530,11 +534,15 @@ footer{
     
 }
 
+/*--------inicio--------*/
+
 @media screen and (max-width:550px) {
    
     .hero h2{
         text-align: center;
     }
+
+    /*--------seleccion--------*/
     .seleccion{
         width: 100%;
         justify-content: center;
@@ -547,7 +555,7 @@ footer{
     }
 }
 
-
+/*--------inicio--------*/
 @media screen and (max-width:500px) {
     .intro img{
         width: 100%;

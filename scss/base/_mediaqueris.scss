@@ -1,0 +1,610 @@
+/*--------INICIO--------*/
+
+@media screen and (max-width: 1480px){
+    header{
+        flex-direction: column;
+    }
+    main{
+        .hero{
+            h2{
+            justify-content: center;
+            }
+            .intro{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+
+                }
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .contenedor{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .tarjetas{
+                    img{
+
+                    }
+                    h3{
+
+                    }
+                    a{
+
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    header{
+
+    }
+    main{
+        .hero{
+            h2{
+                text-align: center;
+            }
+            .intro{
+                img{
+
+                }
+                p{
+
+                }
+            }
+            .contenedor{
+                .tarjetas{
+                    img{
+
+                    }
+                    h3{
+
+                    }
+                    a{
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:550px){
+    header{
+
+    }
+    main{
+        .hero{
+            h2{
+                text-align: center;
+            }
+            .intro{
+                img{
+
+                }
+                p{
+
+                }
+            }
+            .contenedor{
+                .tarjetas{
+                    img{
+
+                    }
+                    h3{
+
+                    }
+                    a{
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    header{
+
+    }
+    main{
+        .hero{
+            h2{
+
+            }
+            .intro{
+                img{
+                    width: 100%;
+                }
+                p{
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+            .contenedor{
+                .tarjetas{
+                    img{
+                        width: 100%;
+                    }
+                    h3{
+
+                    }
+                    a{
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+/*--------LASELECCION--------*/
+@media screen and (max-width: 1480px) {
+    main{
+        .seleccion{
+            width: 100%;
+            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 300px;
+            .titulares{
+                img{
+    
+                }
+                h2{
+    
+                }
+            }
+        }
+    }
+}    
+@media screen and (max-width:1000px) {
+    main{
+        .seleccion{
+            width: 100%;
+            justify-content: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 300px;
+            .titulares{
+                img{
+    
+                }
+             h2{
+    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px) {
+        main{
+        .seleccion{
+            width: 100%;
+            justify-content: center;
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 250px;
+            .titulares{
+                img{
+    
+                }
+                h2{
+    
+                }
+            }
+        }
+    }
+}
+
+/*---------HISTORIA--------*/
+@media screen and (max-width: 1480px) {
+    main{
+        .historia{
+            .historiaScaloni{
+                img{
+                    width: 70%;
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    main{
+        .historia{
+            .historiaScaloni{
+                img{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    main{
+        .historia{
+            .historiaScaloni{
+                img{
+                    width: 70%;    
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    main{
+        .historia{
+            .historiaScaloni{
+                h2{
+                    width: auto;
+                }
+                p{
+
+                }
+                img{
+                    width: 70%;
+                }
+            }
+
+        }
+    }
+}
+
+/*--------COPAAMERICA--------*/
+@media screen and (max-width: 1480px) {
+    main{
+        .copa{
+
+            .copaAmerica{
+                img{
+                    width: 50%;
+                    height: 400px;
+                    transition-property: width, height;
+                    transition-duration: 3s;
+                    &:hover{
+                        width: 100%;
+                        height: 400px;
+                    }
+                
+                }
+            }
+        }
+        .desarrolloAmerica{
+            .partidos{
+                }
+                img{
+                    width: 50%;
+                    height: 400px;
+                    transition-property: width, height;
+                    transition-duration: 3s;
+                    &:hover{
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+@media screen and (max-width:1000px) {
+    main{
+        .copa{
+
+            .copaAmerica{
+
+                h2{
+
+                }
+                p{
+
+                }
+                img{
+                    width: 50%;
+                    height: 400px;
+                    transition-property: width, height;
+                    transition-duration: 3s;
+                    &:hover{
+                        width: 100%;
+                        height: 400px;
+                    }
+                
+                }
+            }
+        }
+        .desarrolloAmerica{
+            .partidos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    main{
+        .copa{
+            .copaAmerica{
+                img{
+                    width: 50%;
+                    height: 400px;
+                    transition-property: width, height;
+                    transition-duration: 3s;
+                    &:hover{
+                        width: 100%;
+                        height: 400px;
+                    } 
+                }
+            }
+        }
+    }
+}
+
+/*--------FINALISSIMA--------*/
+@media screen and (max-width:1000px) {
+    main{
+        .finalissima{
+            
+            .argItalia{
+
+                h2{
+                    width: 90%;
+                }
+                p{
+
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:550px) {
+    main{
+        .finalissima{
+            
+            .argItalia{
+
+                h2{
+                    width: 100%;
+                }
+                p{
+
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+    main{
+        .finalissima{
+            
+            .argItalia{
+
+                h2{
+                    width: 100%;
+                }
+                p{
+
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*--------QATAR2022--------*/
+@media screen and (max-width: 1550px) {
+    main{
+        .qatar{
+
+            .qatarInfo{
+
+                h2{
+
+                }
+                p{
+
+                }
+                .logoMundial{
+
+                }
+                h3{
+
+                }
+                .partidosQatar{
+                    width: 100%;
+                    img{
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:1300px) {
+    main{
+        .qatar{
+
+            .qatarInfo{
+
+                h2{
+
+                }
+                p{
+
+                }
+                .logoMundial{
+                    width: 90%;
+                }
+                h3{
+
+                }
+                .partidosQatar{
+                    width: 50%;
+                    justify-content: center;
+                    img{
+                        width: 65%;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:1000px) {
+    main{
+        .qatar{
+
+            .qatarInfo{
+
+                h2{
+
+                }
+                p{
+
+                }
+                .logoMundial{
+                    width: 90%;                   
+                }
+                h3{
+
+                }
+                .partidosQatar{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 85%;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width:500px){
+    main{
+        .qatar{
+
+            .qatarInfo{
+
+                h2{
+
+                }
+                p{
+
+                }
+                .logoMundial{
+                    width: 90%;
+                }
+                h3{
+
+                }
+                .partidosQatar{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*--------CONTACTO--------*/       
+@media screen and (max-width:1000px) {
+    main{
+        .contacto{
+
+            .contenedor{
+
+                h2{
+                    width: auto;
+                }
+                p{
+
+                }
+                .video{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #d7dae6cc;
+                    border: 2px black solid;
+                    margin: 10px;
+                    h3{
+
+                    }
+                    iframe{
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:650px) {
+    main{
+        .contacto{
+
+            .contenedor{
+
+                h2{
+
+                }
+                p{
+                    text-align: center;
+                }
+                .video{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #d7dae6cc;
+                    border: 2px black solid;
+                    margin: 10px;
+                    width: 80%;
+                    h3{
+
+                    }
+                    iframe{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
