@@ -204,12 +204,7 @@ main .copa {
       padding: 10px; }
     main .copa .copaAmerica img {
       width: 50%;
-      height: 400px;
-      transition-property: width, height;
-      transition-duration: 3s; }
-      main .copa .copaAmerica img:hover {
-        width: 100%;
-        height: 400px; }
+      height: 400px; }
 
 .barra {
   font-size: 45px;
@@ -303,12 +298,7 @@ main .qatar {
       font-size: 20px; }
     main .qatar .qatarInfo .logoMundial {
       width: 50%;
-      height: 400px;
-      transition-property: width, height;
-      transition-duration: 3s; }
-      main .qatar .qatarInfo .logoMundial:hover {
-        width: 70%;
-        height: 400px; }
+      height: 400px; }
     main .qatar .qatarInfo h3 {
       background-color: white;
       width: 60%;

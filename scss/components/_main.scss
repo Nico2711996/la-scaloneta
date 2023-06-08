@@ -196,17 +196,11 @@ main{
                 img{
                     width: 50%;
                     height: 400px;
-                    transition-property: width, height;
-                    transition-duration: 3s;
-                    &:hover{
-                        width: 100%;
-                        height: 400px;
                     }
                 
                 }
             }
-        }
-    }
+ }
         .barra{
             font-size: 45px;
             font-weight: 800;
@@ -322,12 +316,6 @@ main{
                 .logoMundial{
                     width: 50%;
                     height: 400px;
-                    transition-property: width, height;
-                    transition-duration: 3s;
-                    &:hover{
-                        width: 70%;
-                        height: 400px;
-                    }
                 }
                 h3{
                     background-color: white;
